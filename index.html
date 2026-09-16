@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Cloud Engineer Resume</title>
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #2563eb;
+      --text: #334155;
+      --light-text: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background-color: #f8fafc;
+      line-height: 1.35;
+      font-size: 9.5pt;
+    }
+
+    .page {
+      max-width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      background: var(--bg);
+      padding: 0.45in 0.55in;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: -2px;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.5pt;
+      color: var(--light-text);
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 9px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      row-gap: 2px;
+      font-size: 9pt;
+    }
+
+    .skill-category {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 7px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-title {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .job-company {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .job-date, .job-location {
+      font-size: 8.5pt;
+      color: var(--light-text);
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 14px;
+      margin-top: 3px;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    li strong {
+      color: var(--primary);
+    }
+
+    /* Certifications & Education */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .compact-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      margin-bottom: 2px;
+    }
+
+    /* Print Formatting to lock 1 page */
+    @media print {
+      body {
+        background: none;
+      }
+      .page {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-height: auto;
+      }
+      @page {
+        size: letter portrait;
+        margin: 0.4in 0.5in;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+  <!-- Header -->
+  <header>
+    <div class="name">ALEXANDER MORGAN</div>
+    <div class="title">Lead / Senior DevOps & Cloud Infrastructure Engineer</div>
+    <div class="contact">
+      <span>📍 Austin, TX</span>
+      <span>📞 (555) 019-2834</span>
+      <span>✉️ alex.morgan.devops@email.com</span>
+      <span>🔗 linkedin.com/in/alex-morgan-cloud</span>
+      <span>💻 github.com/alex-devops</span>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section>
+    <div class="section-title">Professional Summary</div>
+    <p>
+      DevOps & Cloud Engineer with <strong>6 years of experience</strong> architecting, automating, and maintaining enterprise-scale multi-cloud infrastructures (AWS/GCP). Proven track record reducing deployment cycles by 65%, maintaining 99.99% system availability, and implementing production-grade Kubernetes orchestration, GitOps workflows, and automated Infrastructure-as-Code (Terraform).
+    </p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section>
+    <div class="section-title">Technical Competencies</div>
+    <div class="skills-grid">
+      <div class="skill-category">Cloud Providers:</div>
+      <div>AWS (EKS, ECS, Lambda, VPC, RDS, S3, IAM, CloudFront), GCP (GKE, Compute Engine)</div>
+      <div class="skill-category">Containers & Orch:</div>
+      <div>Kubernetes, Docker, Helm, ArgoCD, Istio Service Mesh, AWS ECS Fargate</div>
+      <div class="skill-category">IaC & Config:</div>
+      <div>Terraform, Terragrunt, Ansible, CloudFormation, Packer</div>
+      <div class="skill-category">CI/CD & GitOps:</div>
+      <div>GitHub Actions, GitLab CI, Jenkins, ArgoCD, FluxCD, SonarQube, Trivy</div>
+      <div class="skill-category">Observability:</div>
+      <div>Prometheus, Grafana, Datadog, ELK Stack, AWS CloudWatch, OpenTelemetry</div>
+      <div class="skill-category">Scripting & OS:</div>
+      <div>Python, Bash, Go (basic), Linux/Unix (RHEL, Ubuntu), Networking (DNS, TCP/IP, VPN)</div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section>
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Senior DevOps Cloud Engineer</span> — <span class="job-company">Nexus Cloud Systems</span></div>
+        <div><span class="job-date">2023 – Present</span> | <span class="job-location">Austin, TX</span></div>
+      </div>
+      <ul>
+        <li>Architected and migrated 45+ microservices to multi-region <strong>AWS EKS</strong> clusters using <strong>Terraform</strong> and <strong>Helm</strong>, resulting in a 30% reduction in annual compute overhead.</li>
+        <li>Implemented a GitOps deployment framework with <strong>ArgoCD</strong> and <strong>GitHub Actions</strong>, cutting mean time to deploy (MTTD) from 4 hours to under 8 minutes across staging and production.</li>
+        <li>Designed zero-trust IAM policies and integrated automated container vulnerability scanning with <strong>Trivy</strong> and <strong>SonarQube</strong> into CI pipelines, ensuring SOC 2 Type II compliance.</li>
+        <li>Built comprehensive <strong>Datadog</strong> and <strong>Prometheus/Grafana</strong> dashboards with alert policies, trimming incident MTTR by 45%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">DevOps / Cloud Infrastructure Engineer</span> — <span class="job-company">StrataScale Technologies</span></div>
+        <div><span class="job-date">2021 – 2023</span> | <span class="job-location">Dallas, TX</span></div>
+      </div>
+      <ul>
+        <li>Automated immutable infrastructure deployment across AWS environments using modular <strong>Terraform</strong> with remote state backends on S3/DynamoDB.</li>
+        <li>Maintained ECS Fargate clusters behind ALBs handling 12M+ requests/day, configuring target tracking auto-scaling based on CPU utilization and request counts.</li>
+        <li>Developed shared <strong>GitLab CI/CD</strong> pipelines utilized by 60+ engineers, standardizing build, lint, test, and container packaging stages.</li>
+        <li>Established disaster recovery strategies with cross-region S3 replication and automated RDS snapshot restore testing.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Junior Cloud / Systems Engineer</span> — <span class="job-company">Apex Data Solutions</span></div>
+        <div><span class="job-date">2020 – 2021</span> | <span class="job-location">Houston, TX</span></div>
+      </div>
+      <ul>
+        <li>Maintained Linux (RHEL/CentOS) application servers, patching routines, and system monitoring.</li>
+        <li>Authored <strong>Bash</strong> and <strong>Python</strong> automation scripts to eliminate repetitive maintenance tasks, saving roughly 15 engineering hours weekly.</li>
+        <li>Assisted in the containerization of legacy monolithic apps into lightweight Docker images.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications & Education -->
+  <section>
+    <div class="two-col">
+      <div>
+        <div class="section-title">Certifications</div>
+        <div class="compact-item">
+          <strong>AWS Certified Solutions Architect – Associate</strong>
+          <span>AWS</span>
+        </div>
+        <div class="compact-item">
+          <strong>Certified Kubernetes Administrator (CKA)</strong>
+          <span>CNCF</span>
+        </div>
+        <div class="compact-item">
+          <strong>HashiCorp Certified: Terraform Associate</strong>
+          <span>HashiCorp</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Education</div>
+        <div class="compact-item">
+          <strong>B.S. in Computer Science / Information Tech</strong>
+          <span>2016 – 2020</span>
+        </div>
+        <div class="compact-item">
+          <span>University of Texas</span>
+          <span>Austin, TX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
